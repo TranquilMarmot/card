@@ -62,8 +62,8 @@ const linkedIn = `${label("LinkedIn")}   ${url(
 )}${nate}${sym("-")}${moore}`;
 
 /** The command you can run to show this card! */
-const cardCommand = `    ${label("Card")}   ${sym("npx")} ${sym(
-  "@"
+const cardCommand = `    ${label("Card")}   ${sym("npx")} github${sym(
+  ":"
 )}${tranquilMarmot}${sym("/")}card`;
 
 /** This is the actual string of the card... */

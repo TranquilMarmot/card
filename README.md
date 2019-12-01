@@ -1,5 +1,9 @@
 # card
 
+<p align="center">
+    <img src="./preview.png" />
+</p>
+
 ## Running
 
 Via `npx`:
@@ -20,7 +24,7 @@ npm install && npm run show
 npm run build
 ```
 
-This will overwrite [`bin/card`](bin/card) with a whatever is defined in [`build.ts`](build.ts)
+This will overwrite [`bin/card`](bin/card) with whatever is defined in [`build.ts`](build.ts)
 
 Running
 

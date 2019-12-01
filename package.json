@@ -7,6 +7,9 @@
     "show": "npm run build --silent && node bin/show-card",
     "build": "ts-node build.ts"
   },
+  "bin": {
+    "card": "./bin/show-card"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tranquilmarmot/card.git"

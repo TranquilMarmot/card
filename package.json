@@ -1,0 +1,29 @@
+{
+  "name": "@tranquilmarmot/card",
+  "version": "1.0.0",
+  "description": "npx github:tranquilmarmot/card",
+  "main": "bin/show-card",
+  "scripts": {
+    "show": "npm run build --silent && node bin/show-card",
+    "build": "ts-node build.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranquilmarmot/card.git"
+  },
+  "author": "TranquilMarmot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TranqtranquilmarmotuilMarmot/card/issues"
+  },
+  "homepage": "https://github.com/tranquilmarmot/card#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "boxen": "^4.1.0",
+    "chalk": "^3.0.0",
+    "ts-node": "^8.5.4",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2"
+  }
+}

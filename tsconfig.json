@@ -1,0 +1,10 @@
+{
+  "files": ["./build.ts"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "noEmit": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
+  }
+}

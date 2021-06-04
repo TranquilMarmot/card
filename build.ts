@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import boxen, { BorderStyle } from "boxen";
+import boxen from "boxen";
 import chalk from "chalk";
 
 /** Create a colored label string */
@@ -30,7 +30,7 @@ const header = `           ${chalk.cyan.bold("Nate")} ${chalk.blue.bold(
 )} ${sym("/")} ${tranquilMarmot}`;
 
 /** Where I (currently) work */
-const work = `  ${chalk.white.bold("Engineering Manager")} at ${chalk.blue.dim(
+const work = `  ${chalk.white.bold("Lead Software Engineer")} at ${chalk.blue.dim(
   "Tyler"
 )} ${chalk.green.dim("Technologies")}
   ${chalk.cyan("Socrata")}, Data & Insights Division`;
@@ -85,7 +85,7 @@ const boxed = boxen(card, {
   padding: 1,
   margin: 1,
   borderColor: "#6e9c78",
-  borderStyle: BorderStyle.Round
+  borderStyle: 'round'
 });
 
 // write the file out to bin/card... bin/show_card will read and print it

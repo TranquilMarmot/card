@@ -9,7 +9,7 @@
 Via `npx`:
 
 ```sh
-npx github:tranquilmarmot/card
+npx @tranquilmarmot/card
 ```
 
 Or locally:
@@ -24,15 +24,13 @@ npm install && npm run show
 npm run build
 ```
 
-This will overwrite [`bin/card`](bin/card) with whatever is defined in [`build.ts`](build.ts)
+## Publishing
 
-Running
+Publishing can be done with:
 
 ```sh
-./bin/show-card
+npm publish --access public
 ```
-
-Simply prints out whatever is in the [`bin/card`](bin/card) file.
 
 ---
 

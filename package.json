@@ -2,16 +2,15 @@
   "name": "@tranquilmarmot/card",
   "version": "1.0.0",
   "description": "npx github:tranquilmarmot/card",
-  "main": "bin/show-card",
+  "main": "./dist/index.js",
   "scripts": {
-    "show": "npm run build --silent && node bin/show-card",
-    "build": "ts-node build.ts"
+    "prepublish": "npm run build",
+    "show": "npm run build --silent && node ./dist/index.js",
+    "build": "tsc"
   },
-  "bin": {
-    "card": "./bin/sasfasfasfsahow-card"
-  },
+  "bin": "./dist/index.js",
   "files": [
-    "bin"
+    "dist"
   ],
   "repository": {
     "type": "git",
@@ -23,11 +22,12 @@
     "url": "https://github.com/TranqtranquilmarmotuilMarmot/card/issues"
   },
   "homepage": "https://github.com/tranquilmarmot/card#readme",
-  "dependencies": {},
+  "dependencies": {
+    "boxen": "^5.0.1",
+    "chalk": "^4.1.1"
+  },
   "devDependencies": {
     "@types/node": "^15.12.0",
-    "boxen": "^5.0.1",
-    "chalk": "^4.1.1",
     "ts-node": "^10.0.0",
     "tslib": "^2.2.0",
     "typescript": "^4.3.2"

@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+#!/usr/bin/env node
+
 import boxen from "boxen";
 import chalk from "chalk";
 
@@ -88,7 +88,4 @@ const boxed = boxen(card, {
   borderStyle: 'round'
 });
 
-// write the file out to bin/card... bin/show_card will read and print it
-(async () => {
-  await fs.promises.writeFile(path.join(__dirname, "bin/card"), `${boxed}`);
-})();
+console.log(boxed);

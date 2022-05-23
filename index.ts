@@ -24,16 +24,18 @@ const moore = chalk.blue(`moore`);
 /** My handle */
 const tranquilMarmot = chalk.green("TranquilMarmot");
 
+/** My handle, but... lowercase */
+const lowerTranquilMarmot = chalk.green("tranquilmarmot");
+
 /** Header for the card */
 const header = `           ${chalk.cyan.bold("Nate")} ${chalk.blue.bold(
   "Moore"
 )} ${sym("/")} ${tranquilMarmot}`;
 
 /** Where I (currently) work */
-const work = `  ${chalk.white.bold("Lead Software Engineer")} at ${chalk.blue.dim(
-  "Tyler"
-)} ${chalk.green.dim("Technologies")}
-  ${chalk.cyan("Socrata")}, Data & Insights Division`;
+const work = `  ${chalk.white.bold(
+  "Senior Software Engineer"
+)} at ${chalk.blue.bold("Vowel")}`;
 
 /** Where I (currently) live */
 const location = `  ${chalk.grey("Seattle, WA")}`;
@@ -62,9 +64,9 @@ const linkedIn = `${label("LinkedIn")}   ${url(
 )}${nate}${sym("-")}${moore}`;
 
 /** The command you can run to show this card! */
-const cardCommand = `    ${label("Card")}   ${sym("npx")} github${sym(
-  ":"
-)}${tranquilMarmot}${sym("/")}card`;
+const cardCommand = `    ${label("Card")}   ${sym("npx")} ${sym(
+  "@"
+)}${lowerTranquilMarmot}${sym("/")}card`;
 
 /** This is the actual string of the card... */
 const card = `${header}
@@ -85,7 +87,7 @@ const boxed = boxen(card, {
   padding: 1,
   margin: 1,
   borderColor: "#6e9c78",
-  borderStyle: 'round'
+  borderStyle: "round",
 });
 
 console.log(boxed);

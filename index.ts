@@ -33,9 +33,9 @@ const header = `           ${chalk.cyan.bold("Nate")} ${chalk.blue.bold(
 )} ${sym("/")} ${tranquilMarmot}`;
 
 /** Where I (currently) work */
-const work = `  ${chalk.white.bold(
-  "Senior Software Engineer"
-)} at ${chalk.blue.bold("Vowel")}`;
+const work = `  ${chalk.white.bold("Senior Software Engineer")} at ${chalk
+  .rgb(255, 79, 0)
+  .bold("Zapier")}`;
 
 /** Where I (currently) live */
 const location = `  ${chalk.grey("Seattle, WA")}`;
@@ -53,12 +53,12 @@ const github = `  ${label("GitHub")}   ${url(
   "https://github.com/"
 )}${tranquilMarmot}`;
 
-/** Link to my Twitter account (it's mostly bad retweets) */
-const twitter = ` ${label("Twitter")}   ${url(
-  "https://twitter.com/"
-)}${tranquilMarmot}`;
+/** Link to my Bluesky account */
+const bluesky = ` ${label("Bluesky")}   ${url(
+  `https://bsky.app/profile/${nate}${dot}${moore}${dot}${chalk.white("codes")}`
+)}`;
 
-/** Link to my LinkedIn account (it's mostly out-of-date) */
+/** Link to my LinkedIn account */
 const linkedIn = `${label("LinkedIn")}   ${url(
   "https://www.linkedin.com/in/"
 )}${nate}${sym("-")}${moore}`;
@@ -77,7 +77,7 @@ ${location}
 ${email}
 ${web}
 ${github}
-${twitter}
+${bluesky}
 ${linkedIn}
 
 ${cardCommand}`;

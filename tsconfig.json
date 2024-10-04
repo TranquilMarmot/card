@@ -1,7 +1,8 @@
 {
   "files": ["./index.ts"],
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "strict": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
